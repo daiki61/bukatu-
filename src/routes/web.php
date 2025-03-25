@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+
+Route::get('/', [IndexController::class, 'index']);
+
+Route::get('/detail', [IndexController::class, 'showdetail']);
+Route::get('/match', [IndexController::class, 'showmatch']);
+Route::get('/event', [IndexController::class, 'showevent']);

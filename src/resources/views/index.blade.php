@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/index.css') }}">
 @endsection
 
 @section('content')
@@ -10,7 +10,7 @@
             alt="メイン集合写真" class="main_photo">
     </div>
 
-    
+
     <small class="rights">&copy; Copyright Nagoyauniversity rubbered baseball club. All rights reserved.</small>
 
 
